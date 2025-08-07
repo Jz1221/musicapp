@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/LightLavender"
+    tools:context=".ProfileActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/player_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!--Linear Layout-->
+        <LinearLayout
+            android:id="@+id/profile_options_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_margin="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/player_view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" >
+
+            <TextView
+                android:id="@+id/profile_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile Page"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="8sp" />
+
+            <!--Username-->
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username: "
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp" />
+
+            <!--Email-->
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <!--Edit Profile-->
+            <Button
+                android:id="@+id/btn_edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textColor="@color/black"
+                android:layout_margin="16dp"
+                android:backgroundTint="@color/blue"/>
+
+            <!--Change Password-->
+            <Button
+                android:id="@+id/btn_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:textColor="@color/black"
+                android:layout_margin="16dp"
+                android:backgroundTint="@color/blue" />
+
+            <!--App Info-->
+            <Button
+                android:id="@+id/btn_app_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App info"
+                android:layout_margin="16dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/blue" />
+
+            <!--Terms of Conditions-->
+            <Button
+                android:id="@+id/btn_terms_conditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terms and Conditions"
+                android:textColor="@color/black"
+                android:layout_margin="16dp"
+                android:backgroundTint="@color/blue"
+                android:layout_marginTop="8dp"/>
+
+            <!--Sign Out-->
+            <Button
+                android:id="@+id/btn_sign_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Out"
+                android:textColor="@color/black"
+                android:layout_margin="16dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/blue"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--Now Playing-->
+    <RelativeLayout
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/PastelPurple"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/song_cover_image_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/song_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Now Playing:"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/song_cover_image_view"
+            android:paddingStart="16dp"
+            android:layout_centerVertical="true"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

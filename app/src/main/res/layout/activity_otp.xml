@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpActivity"
+    android:background="@color/LightLavender"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/otp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the OTP\nwe sent you on the following email :"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:id="@+id/showEmail"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:maxLength="1"
+            android:hint="."
+            android:id="@+id/otp1"/>
+
+        <EditText
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:maxLength="1"
+            android:hint="."
+            android:id="@+id/otp2"/>
+
+        <EditText
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:maxLength="1"
+            android:hint="."
+            android:id="@+id/otp3"/>
+
+        <EditText
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:maxLength="1"
+            android:hint="."
+            android:id="@+id/otp4"/>
+
+        <EditText
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:maxLength="1"
+            android:hint="."
+            android:id="@+id/otp5"/>
+
+        <EditText
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:maxLength="1"
+            android:hint="."
+            android:id="@+id/otp6"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Didn't receive the OTP? Resend OTP"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FINISH"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:id="@+id/button"/>
+
+</LinearLayout>
