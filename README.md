@@ -30,7 +30,7 @@ This project aims to develop a secure music streaming application with user veri
 - Lottie Animation API Link: https://github.com/airbnb/lottie-android
 - SendMail API Link: https://github.com/1902shubh/SendMail
 
-## Android Studio Requirements
+## Requirements
 - OS: Windows 10 64 bit
 - RAM: Minimum 16GB Recommended 32GB
 - CPU: Intel i5 above/Ryzen 5 above
