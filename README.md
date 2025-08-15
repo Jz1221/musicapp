@@ -5,7 +5,7 @@ This project aims to develop a secure music streaming application with user veri
 - [Technologies](#Technologies)
 - [Tools](#Tools)
 - [APIs](#APIs)
-- [Android Studio Requirements](#Requirements)
+- [Android Studio Requirements](#AndroidStudioRequirements)
   
 ## Technologies
 - XML
