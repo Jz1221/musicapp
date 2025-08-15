@@ -4,9 +4,9 @@ This project aims to develop a secure music streaming application with user veri
 ## Table of Contents
 - [Technologies](#Technologies)
 - [Tools](#Tools)
+- [Firebase](#Firebase)
 - [APIs](#APIs)
-- [Firebase Services](#FirebaseServices)
-- [AndroidStudioRequirements](#AndroidStudioRequirements)
+- [Requirements](#Requirements)
   
 ## Technologies
 - XML
@@ -18,7 +18,7 @@ This project aims to develop a secure music streaming application with user veri
 - Android Studio
 - Android Phone
 
-## Firebase Services
+## Firebase
 - Firebase Authentication
 - Firebase Storage
 - Firebase Realtime Database
